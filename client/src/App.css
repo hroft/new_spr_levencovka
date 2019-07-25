@@ -26,9 +26,25 @@
   transition: opacity 1000ms ease-out;
 }
 .card_size {
-  /* width: 300px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2vw;
+
+}
+.botton_block{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  /* margin-top: 40px;  */
+}
+
+.card-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn-size{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.text-size{
+  height: 160px;
 }

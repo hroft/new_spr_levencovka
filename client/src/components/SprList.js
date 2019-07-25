@@ -27,19 +27,28 @@ class SprList extends Component {
 
         <CardBody>
           <CardTitle>{name}</CardTitle>
-          <CardSubtitle>{address}</CardSubtitle>
-          <CardText>{phone}</CardText>
-          <CardText>{time}</CardText>
+          <div className="text-size">
+          <CardText>
+            <i className ="fa fa-map-marker"></i>
+          {address}</CardText>
+          <CardText>
+          <i className="fa fa-info-circle"></i>
+          {phone}</CardText>
+          <CardText>
+            <i className="far fa-clock"></i>
+          {time}</CardText>
           <CardText>{group_spr}</CardText>
+        </div>
+          <div className = "btn-size">
           <a href={url_detail}><Button>Подробнее</Button></a>
-                       <Button
+                    <Button
                      className="remove-btn"
                      color="danger"
-                     size="sm"
+                    //  size="sm"
                      onClick={this.onDeleteClick.bind(this, id)}
-                   >
-                     &times;
+                   >Удалить
                    </Button>
+                   </div>
         </CardBody>
       </Card>
       </CSSTransition>
