@@ -22,8 +22,7 @@ class ItemModal extends Component {
     time:"",
     url_detail:"",
     url_img:"",
-    group_spr:"",
-    value: "torg"
+    group_spr:"torg"
   };
 
   toggle = () => {
@@ -47,7 +46,7 @@ class ItemModal extends Component {
       time: this.state.time,
       url_detail: this.state.url_detail,
       url_img: this.state.url_img,
-      group_spr: this.state.value
+      group_spr: this.state.group_spr
     };
 
     //Additem via addItem action
@@ -55,6 +54,8 @@ class ItemModal extends Component {
 
     //Close modal
     this.toggle();
+
+    console.log(this.state.group_spr);
   };
 
 

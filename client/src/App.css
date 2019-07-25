@@ -25,3 +25,10 @@
   opacity: 0.01;
   transition: opacity 1000ms ease-out;
 }
+.card_size {
+  /* width: 300px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-top: 40px;  */
+}
