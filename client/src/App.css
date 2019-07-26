@@ -44,7 +44,8 @@
 .btn-size{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
 .text-size{
-  height: 160px;
+  height: 200px;
 }

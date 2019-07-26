@@ -38,44 +38,23 @@ class SprList extends Component {
             <i className="far fa-clock"></i>
           {time}</CardText>
           <CardText>{group_spr}</CardText>
+          <CardText>{url_detail}></CardText>
         </div>
           <div className = "btn-size">
-          <a href={url_detail}><Button>Подробнее</Button></a>
+          <Button>Изменить</Button>
                     <Button
                      className="remove-btn"
                      color="danger"
-                    //  size="sm"
                      onClick={this.onDeleteClick.bind(this, id)}
                    >Удалить
                    </Button>
-                   </div>
+            </div>
         </CardBody>
       </Card>
       </CSSTransition>
       ))}
       </div>
       </Container>
-      // <Container>
-      //   <ListGroup>
-      //     <TransitionGroup className="spr-list">
-      //       {items.map(({ id, name }) => (
-      //         <CSSTransition key={id} timeout={500} classNames="fade">
-      //           <ListGroupItem>
-      //             <Button
-      //               className="remove-btn"
-      //               color="danger"
-      //               size="sm"
-      //               onClick={this.onDeleteClick.bind(this, id)}
-      //             >
-      //               &times;
-      //             </Button>
-      //             {name}
-      //           </ListGroupItem>
-      //         </CSSTransition>
-      //       ))}
-      //     </TransitionGroup>
-      //   </ListGroup>
-      // </Container>
     );
   }
 }
