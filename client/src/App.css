@@ -27,7 +27,7 @@
 }
 .card_size {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2vw;
 
 }
@@ -39,6 +39,7 @@
 .card-title{
   font-size: 1.3rem;
   font-weight: 600;
+  /* height: 50px; */
 }
 
 .btn-size{
@@ -48,4 +49,7 @@
 }
 .text-size{
   height: 200px;
+}
+.m-r-10{
+  margin-right: 10px;
 }
